@@ -1,6 +1,7 @@
-from core import command, on_load, on_start
 from telegram import Update
 from telegram.ext import CallbackContext
+
+from ..core import command, on_load, on_start
 
 
 @on_load
@@ -16,12 +17,6 @@ async def started(bot, *_):
 @command("ping")
 async def ping(bot, update: Update, ctx: CallbackContext):
     await update.effective_message.reply_text("pong")
-
-
-# modules/start.py
-from core import command
-from telegram import Update
-from telegram.ext import CallbackContext
 
 
 @command("start")
