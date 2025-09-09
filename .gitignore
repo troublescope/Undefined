@@ -1,0 +1,31 @@
+**/__pycache__/**
+
+# environment file
+config.toml
+!sample_config.toml
+
+# Build folder
+dist/
+
+# Runtime data
+.cache/
+.heroku/
+.profile.d/
+caligo/.chache/
+chache/
+downloads/
+caligo/downloads/
+caligo/chache/
+vendor/
+
+# file
+.DS_Store
+*.pyc
+*.log
+*.session
+*.session-journal
+
+# IDE specific files
+.idea/
+.vscode/
+*.sw*
