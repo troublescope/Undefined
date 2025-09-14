@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "zyra"
+version = "0.1.0"
+description = "Async Telegram bot framework with modular design, PTB v22 support, and selfbot-inspired utilities."
+authors = ["Troublescope <tomiprs25@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/troublescope/Zyra.git"
+documentation = "https://github.com/troublescope/Zyra/blob/master/README.md"
+keywords = ["chat", "telegram", "selfbot", "telegram-bot", "python-telegram-bot"]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: AsyncIO",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Communications",
+    "Topic :: Communications :: Chat",
+]
+
+[tool.poetry.scripts]
+zyra = "zyra.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+python-telegram-bot = { version = ">=22.3,<23.0", extras = ["rate-limiter"] }
+python-dotenv = ">=1.1.1,<2.0.0"
+beauty-print = ">=0.6.1,<0.7.0"
+aiorun = ">=2025.1.1,<2026.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
